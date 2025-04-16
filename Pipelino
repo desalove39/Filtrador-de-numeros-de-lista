@@ -1,0 +1,15 @@
+pipeline{
+  agent any // significa que usará cualquier nodo para construir un pipeline
+
+  tools{
+    maven 'Maven Apache'
+  }
+  stages{
+    stage('Chekout'){
+      steps{
+        //clonar repositorio desde github
+        git url: ''
+      }
+    }
+  }
+{
